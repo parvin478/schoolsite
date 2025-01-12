@@ -1,0 +1,113 @@
+	
+:root{
+	--green: blue;
+	--black: #130f40;
+	--light-color: #666;
+	--box-shadow: 0 .1rem 1rem black;
+	--border: 2rem solid rgba(0,0,0.8);
+	--outline: .1rem solid rgba(0,0,0.1);
+	
+}
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem ;
+}
+body{
+	background; #eee;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	background: #fff;
+	box-shadow: var(--box-shadow);
+}
+.header .logo {
+	font-size: 3.5rem;
+	font-weight: bolder;
+}
+.header .logo {
+	color:var(--green);
+}
+.header .navbar a{
+	text-decoration: none;
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	color: var(--black);
+	
+}
+.header .navbar a:hover {
+	color:var(--green);
+}
+	
+.header .icons div {
+	
+height: 4.5rem;
+width: 4.5rem;
+line-height: 4.5rem;
+border-radius: .5rem;
+background: orange;
+color: var(--black);
+font-size: 2rem;
+margin-right: .3rem;
+text-align: center;
+cursor:pointer;
+}
+.header .icons div:hover {
+	background: var(--green);
+	color: red;
+}
+.banner {
+background: url('f6.jpeg');
+height: 70vh;
+}
+.banner h1,p {
+text-shadow: 2px 2px 10px rgba(0,0,0.5);
+color: black;
+} 	
+.banner .btn {
+	box-shadow: 0 5px 15px rgba(0,128,0,0.5);
+	transition: all 0.3s ease-in-out;
+}
+.banner .btn:hover {
+background-color: #45a049;
+transform: scale(1.05);
+}
+/* Features Section Styling */
+.features {
+	background-color: rgb(230, 249, 224);
+	font-size: 12px;
+}
+.features .feature-card {
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+	
+.features .feature-card:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0, 0, 0.1);
+}
+.features img:hover {
+	filter: brightness(1);
+}
+	
